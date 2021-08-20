@@ -1,10 +1,10 @@
 # Virtual-Object-Recognition-Robot-using-Webots
 
 <ul>
-<li>Project Name: Object Recognition Robot <h4>
-<li>Project Type: Theoretical/Virtual <li>
-<li>Software: Webots <li>
-<li>Controller Code Language: C++ <li>
+<li>Project Name: Object Recognition Robot </li>
+<li>Project Type: Theoretical/Virtual </li>
+<li>Software: Webots </li>
+<li>Controller Code Language: C++ </li>
 <li>Project Video Link: </li>
 </ul>
 
