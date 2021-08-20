@@ -45,7 +45,7 @@ initial velocity. <br><br>
 For making the robot moving and avoiding obstacles, we made this while loop and gave the
 motor some speed to get moving. We also created an obstacle-avoiding flag that tells the robot
 to rotate when it senses some obstacles.<br> <br>
-<b>Code link: <a href="https://github.com/farishta4898/Virtual-Object-Recognition-Robot-using-Webots/blob/main/object_detection.cpp"></a></b> <br> <br><br>
+<b>Code link: <a href="https://github.com/farishta4898/Virtual-Object-Recognition-Robot-using-Webots/blob/main/object_detection.cpp">Click Here</a></b> <br> <br><br>
 
 <h4>‣ Mechanism and Simulation:</h4>
 Now that we are done with the robot body-building and controller code part let’s jump onto the
