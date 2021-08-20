@@ -7,7 +7,7 @@
 <li>Project Type: Theoretical/Virtual </li>
 <li>Software: Webots </li>
 <li>Controller Code Language: C++ </li>
-<li>Project Video Link: </li>
+  <li>Project Video Link: <a href="https://www.youtube.com/watch?v=UzMLEb9Cm9w">Click Here</a></li>
 </ul>
 
 
