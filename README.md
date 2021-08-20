@@ -10,7 +10,7 @@
 </ul>
 
 
-<h4>Virtual Robot Body Building: </h4>
+<h4>‣ Virtual Robot Body Building: </h4>
 For creating a Robot we had to choose Robot from the base node, then to add it. After
 that, we went to the children under the Robot and then choose the shape, from the base
 node and we have to add it. Then we had to choose PVR appearance and the colour. Here we have choose a royal blue color for the Robot. Then we made sure that the
@@ -32,7 +32,7 @@ robot body in the same way we created the distance sensor. In this case, we sele
 color and spherical shape instead to put on the front. <br>
 Thus our virtual body is created for further simulation. <br> <br> <br> 
 
-<h4>Controller Code: </h4>
+<h4>‣ Controller Code: </h4>
 Here comes the controller part of our robot. The controller code was implemented in
 C++. Initially, we imported all the necessary header files then we defined the time step which
 64ms. <br><br> 
@@ -44,7 +44,7 @@ For making the robot moving and avoiding obstacles, we made this while loop and 
 motor some speed to get moving. We also created an obstacle-avoiding flag that tells the robot
 to rotate when it senses some obstacles. <br> <br><br> 
 
-<h4>Mechanism and Simulation:</h4>
+<h4>‣ Mechanism and Simulation:</h4>
 Now that we are done with the robot body-building and controller code part let’s jump onto the
 simulation and mechanism part. First of all, we need to understand which components are
 responsible for making the object recognition system work. <br> <br> 
