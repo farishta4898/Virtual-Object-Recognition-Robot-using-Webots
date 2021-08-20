@@ -10,25 +10,20 @@
 
 
 <h4>Virtual Robot Body Building: </h4>
-For creating a Robot we need to choose Robot from the base node, then we have to add it. After
-that, we have to go to the children under the Robot and then choose the shape, from the base
-node and we have to add it. Then we need to choose PVR appearance and then we need to
-choose, here I am choosing a royal blue color for the Robot. Then we need to make sure that the
+For creating a Robot we had to choose Robot from the base node, then to add it. After
+that, we went to the children under the Robot and then choose the shape, from the base
+node and we have to add it. Then we had to choose PVR appearance and the colour. Here we have choose a royal blue color for the Robot. Then we made sure that the
 metalness is 5. For the geometry, we need to choose a box shape for our body parts. Then we
-need to resize the robot, by choosing the coordinates values of x, y, z. Then we have to name the
-shape as the body. After that, we need to go to the bounding object and then use, then body
-shape. After that, we need to go to the physics and add the physics. <br> 
-Now the body is completed and for the wheels we need to go to the children again and we have
-to go to the add a node then select a hinge joint then go to joint perimeter and then select hinge
-joint. Then we need to go to the device and choose a rotational motor for the robot wheel then we
-have to choose solid. Then again go to the children and choose the shape and in the shape, we
-have to add appearance as before. For the wheel, we are choosing brick red. And geometry
-would be a cylindrical shape, we need to change the height and radius. Then we need to rotate
+resized the robot, by choosing the coordinates values of x, y, z. Then named the
+shape accordingly. After that, we went to the bounding object and then used the body
+shape. After that, we added the physics. <br> 
+Now that the body is completed and for the wheels we went to the children again and added a node then select a hinge joint. The device was selected and a rotational motor was chosen for each robot wheel. After that we applied the solid property. Then again went children and choose the shape and in the shape, appearance was added as before. For the wheel, we choose brick red. And for the geometry a cylindrical shape
+was chosen, the height and radius was changed. Then we rotated
 the position of the wheel by x, y, and z coordinate and also change the value of rotation and
-scale, now our one wheel is ready next we need to do the same for the rest of the wheels.
-Now we need to add a distance sensor to the robot, for this we need to go to the basic nodes then
-again to the shape after that to the children then appearance and select the appearance than the
-geometry which will be the box, then changing the size of the x, y and z coordinates. Then we
+scale, now as of the one wheels is ready the same procedure is followed for the rest 3 and the translation points are set accoridngly. <br>
+Then we added two distance sensors to the robot, for this we needed to go to the basic nodes then
+again to the shape after that to the children then appearance and selected the appearance then the
+geometry (box shape) then changed the size of the x, y and z coordinates. Then we
 applied optional rendering to check if the x-axis is set properly and make the distance sensors
 operate. <br> 
 Then lastly, we have set up a camera from the base nodes section in the children node of the
@@ -37,7 +32,7 @@ color and spherical shape instead to put on the front. <br>
 Thus our virtual body is created for further simulation. <br> <br>
 
 <h4>Controller Code: </h4>
-Now I'm going to explain the controller part of our robot. Here we can see the controller code in
+Here comes the controller part of our robot. The controller code was implemented in
 C++. Initially, we imported all the necessary header files then we defined the time step which
 64ms. <br>
 After defining the robot and distance sensor pointer, we instructed the sensors to take input after
