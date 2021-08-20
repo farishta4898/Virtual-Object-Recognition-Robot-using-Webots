@@ -1,0 +1,435 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.011104058594161794 -0.8720526768387517 -0.48928603975701696 3.102016375911871
+  position 1.001303835365406 2.479266029324371 -0.4638899709179828
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 -0.06 -0.02
+  floorSize 3 3
+  floorTileSize 2 2
+  wallThickness 0.08
+  wallHeight 0.15
+}
+Robot {
+  translation 0.729505653533007 -0.00769638944187939 0.8767978359274896
+  rotation 3.5649234009746114e-05 0.999999992024075 -0.00012116510272242925 1.4856679561326946
+  scale 1.2 1.2 1.2
+  children [
+    GPS {
+      translation 0 0.02 0
+      children [
+        DEF GPS Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.02
+            radius 0.04
+          }
+        }
+      ]
+      boundingObject USE GPS
+      physics Physics {
+      }
+    }
+    Camera {
+      translation 1.73472e-18 0.01 0.1
+      rotation 0 1 0 -3.141592653589793
+      children [
+        DEF camera Shape {
+          appearance PBRAppearance {
+            metalness 0
+          }
+          geometry Sphere {
+            radius 0.015
+            subdivision 5
+          }
+        }
+      ]
+      boundingObject USE camera
+      physics Physics {
+      }
+      recognitionColors [
+        1 0 0.0156863
+      ]
+      fieldOfView 1
+      width 640
+      height 640
+      recognition Recognition {
+        frameThickness 3
+      }
+    }
+    DEF DS_left DistanceSensor {
+      translation 0.03 -1.73472e-18 0.1
+      rotation 0 1 0 -1.1391003061004252
+      children [
+        DEF DS_left Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "DS_left"
+      boundingObject USE DS_left
+      physics Physics {
+      }
+    }
+    DEF DS_right DistanceSensor {
+      translation -0.03 -1.73472e-18 0.1
+      rotation 0 1 0 -2.0553996938995747
+      children [
+        DEF DS_left Shape {
+          appearance PBRAppearance {
+            baseColor 1 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "DS_right"
+      boundingObject USE DS_left
+      physics Physics {
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 7912.697299125259
+        anchor 0.06 -0.014 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.06002042002561396 -0.013997762684862193 0.049991354487788145
+        rotation -0.6419786471423388 0.6425029687884871 -0.41839377589929905 3.933815990609764
+        children [
+          DEF Wheel1 Shape {
+            appearance PBRAppearance {
+              baseColor 0.705882 0.196078 0.156863
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.03
+              radius 0.03
+            }
+          }
+        ]
+        boundingObject USE Wheel1
+        physics Physics {
+        }
+        linearVelocity 0.03587435097075407 -7.446669314267251e-07 0.0030588478801495253
+        angularVelocity 0.08503995567599443 -3.5674161470322144e-05 -0.9964379757801112
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 5181.315891678185
+        anchor -0.06 -0.014 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel2"
+        }
+      ]
+      endPoint Solid {
+        translation -0.060005998527928504 -0.014013879408960794 0.04998867796085051
+        rotation -0.6825902448988946 0.6828647393935074 0.2603196213540272 2.6330991854820582
+        children [
+          DEF Wheel2 Shape {
+            appearance PBRAppearance {
+              baseColor 0.705882 0.196078 0.156863
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.03
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Wheel2
+        physics Physics {
+        }
+        linearVelocity 0.035863449902663984 6.460763148028973e-07 0.0030579164298267336
+        angularVelocity 0.08503989444767908 -3.554499287044878e-05 -0.9964371921948852
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 7912.697407541736
+        anchor 0.06 -0.014 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel3"
+        }
+      ]
+      endPoint Solid {
+        translation 0.060005585978100934 -0.013996687572436634 -0.05000332798459703
+        rotation -0.6419919567216695 0.6425164031080836 -0.4183527210879985 3.9337461747144644
+        children [
+          DEF Wheel3 Shape {
+            appearance PBRAppearance {
+              baseColor 0.705882 0.196078 0.156863
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.03
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE Wheel3
+        physics Physics {
+        }
+        linearVelocity 0.03587689816509468 1.0652431824353724e-07 0.003064689896399697
+        angularVelocity 0.08504000795171181 -3.562011574096233e-05 -0.9964381897047951
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 5181.315781313061
+        anchor -0.06 -0.014 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel4"
+        }
+      ]
+      endPoint Solid {
+        translation -0.06002007710047584 -0.014007138769151956 -0.05000457257721341
+        rotation -0.6825982029147939 0.6828721376219429 0.2602793442383241 2.6331738719467066
+        children [
+          DEF Wheel4 Shape {
+            appearance PBRAppearance {
+              baseColor 0.705882 0.196078 0.156863
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.03
+              radius 0.03
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE Wheel4
+        physics Physics {
+        }
+        linearVelocity 0.035872335496275914 -1.80238528462669e-08 0.003064299333833887
+        angularVelocity 0.0850399855687488 -3.5490892781873726e-05 -0.9964378615625451
+      }
+    }
+    DEF Body Shape {
+      appearance PBRAppearance {
+        baseColor 0.0509804 0.027451 0.290196
+        metalness 0
+        textureTransform TextureTransform {
+        }
+      }
+      geometry Box {
+        size 0.1 0.05 0.2
+      }
+    }
+  ]
+  boundingObject USE Body
+  physics Physics {
+  }
+  recognitionColors [
+    1 0 0
+  ]
+  controller "object_detection"
+  linearVelocity 0.03587781538476954 -8.370399126634215e-06 0.0030620253118903997
+  angularVelocity 1.3504603872372273e-05 5.275107749180165e-05 -5.9114559453251293e-05
+}
+Can {
+  translation -0.15675536571198806 0.0010607660743499495 0.6234225159024805
+  rotation 1.233629187403092e-16 -1 3.2539290193653765e-17 1.623972540627489
+  name "can(8)"
+  mass 0.1
+}
+Can {
+  translation 0.21919729580660946 0.001060766074349951 -1.1849331279554516
+  rotation 1.0560622459492996e-16 -1 2.570313442026831e-16 0.16849722338122247
+  name "can(6)"
+  mass 0.1
+}
+Can {
+  translation 0.8613146281088042 0.001060766074349946 1.1116291365428799
+  rotation 2.808261419955141e-16 1 -5.165849620644426e-17 0.39519550821867394
+  name "can(5)"
+  mass 0.1
+}
+Can {
+  translation -0.5161643889011339 0.0010607660743499484 1.0916165244699498
+  rotation 1.569563121395493e-15 -1 4.715637067874767e-16 0.12284803021485162
+  name "can(2)"
+  mass 0.1
+}
+Can {
+  translation -1.3550915636680811 0.0010607660743499514 -0.7079330131941027
+  rotation 9.626548391974969e-17 1 3.8145096701941065e-17 0.458814061361731
+  name "can(9)"
+  mass 0.1
+}
+Can {
+  translation 1.0658851349479215 0.0008645963384112701 -0.13762970170178584
+  rotation -7.730401905072939e-17 1 -6.403606409342204e-17 1.1309521347774985
+  name "can(4)"
+  mass 0.6
+}
+Can {
+  translation 0.48417966651557187 0.0010607660743499536 -0.6022579484794827
+  rotation 1.0564398815713902e-16 1 -2.0850922378974116e-16 1.1234390553504736
+  name "can(1)"
+  mass 0.1
+}
+Can {
+  translation -0.5599873290077957 0.0010607660743499545 0.3341011855894044
+  rotation -4.185351680990922e-17 -1 6.224141322736609e-17 1.1006461580264435
+  name "can(7)"
+  mass 0.1
+}
+OilBarrel {
+  translation -1.3082951682568957 0.014334411150936593 0.6189106961670086
+  rotation 2.3903232551512104e-13 1 9.910049492003544e-14 0.0004155729547934458
+  name "oil barrel(10)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 1.3286195594316275 0.014334411150936666 -0.39509088743784565
+  rotation 6.726537626955373e-17 1 -1.1255511947558123e-16 0.28961214489044473
+  name "oil barrel(9)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 1.160033578709813 0.0143344111509366 0.9838547392767782
+  rotation 1.579898559868842e-15 0.9999999999999999 2.366452848859187e-16 0.05555280217579415
+  name "oil barrel(7)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation -1.0681398069302566 0.014334411150936593 1.088593073345224
+  rotation 7.090536874497113e-16 1 -3.643159670384211e-16 0.13658320879307692
+  name "oil barrel(6)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 0.9369675581710591 0.014334411150936593 -1.3307269597255782
+  rotation 1.699564369583404e-16 -1 1.5043633485649362e-15 0.02769780050226868
+  name "oil barrel(5)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation -8.195324358166065e-05 0.014334411150936591 1.2832637696389348
+  rotation -8.138363952848305e-13 -1 3.3970262247683163e-12 1.0518841059281704e-05
+  name "oil barrel(1)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation -1.1755895151821134 0.014334411150936597 4.249597671952552e-07
+  rotation -6.2520969481755e-12 1 4.65516352765811e-12 2.915961467757644e-06
+  name "oil barrel(2)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 0.20971500246335115 0.014334411150936621 -0.02901405852915604
+  rotation -0.3561870265686673 5.648253939357634e-17 0.9344146842297437 3.141592653589793
+  name "oil barrel(4)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 0.09308701501796354 0.01433441115093659 0.630639487726509
+  rotation 1.9132593452586402e-15 -1 -1.511432849165563e-15 0.04980060690610787
+  name "oil barrel(8)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation 0.12086131005667969 0.014334261324076935 -0.8753351751916237
+  rotation -7.380205457683492e-07 0.9999999999865438 -5.134960889470015e-06 0.2607735514577335
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation -0.314452329304829 0.014334411150936591 -1.2197590399170126
+  rotation 4.8175219746880276e-14 1 -3.3813826417221284e-14 0.0002793392384844651
+  name "oil barrel(3)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+OilBarrel {
+  translation -0.9810800811118267 0.014334411150936591 -1.219370000002033
+  rotation 9.679081773890311e-15 1 3.0757906167181475e-13 0.00020331610949316775
+  name "oil barrel(11)"
+  height 0.15
+  radius 0.06
+  physics Physics {
+  }
+}
+FifaSoccerBall {
+  translation 1.3505632875139413 0.05182517546928719 1.0702887978258497
+  rotation -0.16594226463908748 0.9640794589229981 0.20739807542306207 2.8282784177708953
+}
+FifaSoccerBall {
+  hidden linearVelocity_0 -0.0017863001632876605 -6.558088802588447e-17 0.00015500659103796189
+  hidden angularVelocity_0 0.0013778363647818834 0.015612854418459502 0.015878223673668094
+  translation -0.6713198336551187 0.051825072000000014 -0.1294212899168139
+  rotation -0.48582230709945967 0.3865171530029242 0.7839522793889129 0.7296627453451763
+  name "fifa soccer ball(1)"
+}
+FifaSoccerBall {
+  translation 1.2775490139902692 0.05182517546928719 0.8572307331365209
+  rotation 0.030785655445081165 0.7205488276355827 0.692720456181138 1.9893441559944516
+  name "fifa soccer ball(2)"
+}
+FifaSoccerBall {
+  translation -0.449828111684808 0.05182517546928719 1.3066167394920578
+  rotation 0.3178865633983572 0.9471938410361062 0.04209465897296199 -2.850587892524989
+  name "fifa soccer ball(3)"
+}
