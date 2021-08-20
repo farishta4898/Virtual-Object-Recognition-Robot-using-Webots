@@ -7,17 +7,18 @@
 <li>Project Type: Theoretical/Virtual </li>
 <li>Software: Webots </li>
 <li>Controller Code Language: C++ </li>
-  <li>Project Video Link: <a href="https://www.youtube.com/watch?v=UzMLEb9Cm9w">Click Here</a></li>
+<li>Project Video Link: <a href="https://www.youtube.com/watch?v=UzMLEb9Cm9w">Click Here</a></li>
+<li>Project Contributors: <a href="https://github.com/AlphaDog707">Arman Hossain, </a><a href="https://github.com/farishta4898">Farishta Kabir, </a><a href="https://github.com/sameha23">Sameha Kamrul</a></li>
 </ul>
 
 
 <h4>‣ Virtual Robot Body Building: </h4>
-For creating a Robot we had to choose Robot from the base node, then to add it. After
-that, we went to the children under the Robot and then choose the shape, from the base
-node and we have to add it. Then we had to choose PVR appearance and the colour. Here we have choose a royal blue color for the Robot. Then we made sure that the
-metalness is 5. For the geometry, we need to choose a box shape for our body parts. Then we
+For creating the robot we had to choose the robot node from the base nodes. After
+that, we went to the children under the Robot section and then choose the shape, from the base
+node and add it. For the geometry, we chose a box shape for our body part. Then we
 resized the robot, by choosing the coordinates values of x, y, z. Then named the
-shape accordingly. After that, we went to the bounding object and then used the body
+shape accordingly. Then we choose PVR appearance and the colour. Here we have chosen a royal blue color for the robot body. Then set the
+metalness is 5. After that, we went to the bounding object and then used the body
 shape. After that, we added the physics. <br> <br> 
 Now that the body is completed and for the wheels we went to the children again and added a node then select a hinge joint. The device was selected and a rotational motor was chosen for each robot wheel. After that we applied the solid property. Then again went children and choose the shape and in the shape, appearance was added as before. For the wheel, we choose brick red. And for the geometry a cylindrical shape
 was chosen, the height and radius was changed. Then we rotated
