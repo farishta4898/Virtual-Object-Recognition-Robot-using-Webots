@@ -1,6 +1,6 @@
 # Virtual-Object-Recognition-Robot-using-Webots
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theconstructsim.com%2Fwp-content%2Fuploads%2F2015%2F10%2F%3FC%3DD%3BO%3DD&psig=AOvVaw37B0fH1hcACfvsnVLKs12a&ust=1629546781610000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJC0wfvEv_ICFQAAAAAdAAAAABAD" style="height: 60px; width: 60px">
+<img src="https://www.theconstructsim.com/wp-content/uploads/2015/10/webots-1.png" style="height: 60px; width: 60px">
 
 <ul>
 <li>Project Name: Object Recognition Robot </li>
